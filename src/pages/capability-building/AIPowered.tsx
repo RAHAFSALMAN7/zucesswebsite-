@@ -14,7 +14,7 @@ const showcaseVideos = [
 
   {
     title: "With this level of video and avatar quality, you’ll have content we’re truly proud to deliver.",
-    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755502519/all-1_e9ngGJZy_z8gq7g.mp4",
+    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755689178/all-sound-effects_3y8VGLZK_mftv2q.mp4",
     thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
   }, 
 
@@ -30,9 +30,9 @@ const showcaseVideos = [
   },
    
   {
-    title: "ليش تختار (Zuccess)?",
-    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755502847/why_zuccess_2_owxmdg.mp4",
-    thumbnail: "https://i.postimg.cc/643G6Wq6/image.png"
+    title: "Welcome to Zuccess?",
+    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755690226/automation_g1jicXoL_1_qfkmvq.mp4",
+    thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
   }
 ];
 
