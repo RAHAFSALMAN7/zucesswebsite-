@@ -61,18 +61,19 @@ const Homepage = () => {
       {/* Section 1 - Hero */}
       <section className="relative w-full h-[90vh] flex flex-col justify-center items-start text-left px-6 md:px-24 overflow-hidden">
         {/* Background Video */}
-        <video
-          ref={heroVideoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-          id="heroVideo"
-        >
-          <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4" />
-          Your browser does not support the video tag.
-        </video>
+      <video
+  ref={heroVideoRef}
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover top-10"
+  id="heroVideo"
+>
+  <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4" />
+  Your browser does not support the video tag.
+</video>
+
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
