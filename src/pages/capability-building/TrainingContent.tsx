@@ -116,7 +116,7 @@ function App() {
               {/* Video Player */}
               <div className="aspect-video w-full mb-8">
                 <video
-                  src="https://res.cloudinary.com/diroi6tnk/video/upload/v1755503197/%D8%A7%D9%84%D8%AA%D8%AF%D8%B1%D9%8A%D8%A8_jhf62k.mp4"
+                  src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756029123/%D8%A7%D9%84%D8%B9%D9%85%D8%A7%D9%84%D8%A9_mtetc9.mp4"
                   controls
                   className="w-full h-full object-cover rounded-2xl"
                 >

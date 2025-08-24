@@ -70,7 +70,7 @@ const Homepage = () => {
           className="absolute inset-0 w-full h-full object-cover"
           id="heroVideo"
         >
-          <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1755501406/LINKEDIN_w8zwl9.mp4" type="video/mp4" />
+          <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4" />
           Your browser does not support the video tag.
         </video>
 
@@ -143,7 +143,7 @@ const Homepage = () => {
             className="w-full h-full object-cover"
           >
             <source
-              src="https://res.cloudinary.com/diroi6tnk/video/upload/v1755689178/all-sound-effects_3y8VGLZK_mftv2q.mp4"
+              src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4"
               type="video/mp4"
             />
             Your browser does not support the video tag.

@@ -63,13 +63,13 @@ const CapabilityBuilding = () => {
       title: 'Interactive Avatar',
       description: 'Design customizable AI avatars to enhance virtual interactions and presentations.',
       icon: User,
-      path: '/capability-building/interactive-avatar'
+      path: '/interactive-avatar'  // ✅ تم تعديل المسار
     },
     {
       title: '360 AI Tour',
       description: 'Provide immersive 360° AI-powered virtual tours for your company or products.',
       icon: Globe,
-      path: '/capability-building/360-ai-tour'
+      path: '/360-ai-tour'  // ✅ تم تعديل المسار
     }
   ];
 

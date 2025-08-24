@@ -14,24 +14,24 @@ const showcaseVideos = [
 
   {
     title: "With this level of video and avatar quality, you’ll have content we’re truly proud to deliver.",
-    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755689178/all-sound-effects_3y8VGLZK_mftv2q.mp4",
-    thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
+    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4",
+    thumbnail: "https://i.postimg.cc/Xv7dRsFx/aiwelcom-to-zuccess.png"
   }, 
 
   {
     title: "Why choose Zuccess?",
     videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755501115/why_zuccess_ig3mr0.mp4",
-    thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
+    thumbnail: "https://i.postimg.cc/yd2RSBGr/whychoos-zuccess.png"
   },
   {
     title: "evreyone posts ",
     videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755501406/LINKEDIN_w8zwl9.mp4",
-    thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
+    thumbnail: "https://i.postimg.cc/MTfMwNG0/startposting.png"
   },
    
   {
     title: "Welcome to Zuccess?",
-    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755690226/automation_g1jicXoL_1_qfkmvq.mp4",
+    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4",
     thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
   }
 ];

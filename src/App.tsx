@@ -20,6 +20,10 @@ import CompanyPortal from './pages/capability-building/CompanyPortal';
 import SocialMediaManagement from './pages/capability-building/SocialMediaManagement';
 import AIPowered from './pages/capability-building/AIPowered';
 
+// الصفحات الجديدة
+import InteractiveAvatar from './pages/InteractiveAvatar';
+import AITour360 from './pages/AITour'; // ✅ تأكد أن هذا الملف يحتوي على export default
+
 function App() {
   const [scrollY, setScrollY] = useState(0);
 
@@ -29,7 +33,6 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // حساب شفافية الخلفية بناءً على التمرير (غير متوفر في الصفحة الرئيسية)
   const scrollProgress = Math.min(scrollY / (window.innerHeight * 2), 1);
   const bgOpacity = 0.98 - scrollProgress * 0.2;
 
@@ -73,6 +76,10 @@ function App() {
               <Route path="/capability-building/company-portal" element={<CompanyPortal />} />
               <Route path="/capability-building/social-media-management" element={<SocialMediaManagement />} />
               <Route path="/capability-building/ai-powered" element={<AIPowered />} />
+
+              {/* الصفحات الجديدة */}
+              <Route path="/interactive-avatar" element={<InteractiveAvatar />} />
+              <Route path="/360-ai-tour" element={<AITour360 />} />
 
               {/* صفحات عامة */}
               <Route path="/about-us" element={<AboutUs />} />
