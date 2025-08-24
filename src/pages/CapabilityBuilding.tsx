@@ -9,7 +9,9 @@ import {
   Cog,
   Building,
   ArrowRight,
-  Share2
+  Share2,
+  User,          // أيقونة للـ Interactive Avatar
+  Globe          // أيقونة للـ 360 AI Tour
 } from 'lucide-react';
 
 const CapabilityBuilding = () => {
@@ -55,6 +57,19 @@ const CapabilityBuilding = () => {
       description: 'Let us build your voice while you build your business. Complete social media management from content creation to community engagement.',
       icon: Share2,
       path: '/capability-building/social-media-management'
+    },
+    // === الخدمات الجديدة ===
+    {
+      title: 'Interactive Avatar',
+      description: 'Design customizable AI avatars to enhance virtual interactions and presentations.',
+      icon: User,
+      path: '/capability-building/interactive-avatar'
+    },
+    {
+      title: '360 AI Tour',
+      description: 'Provide immersive 360° AI-powered virtual tours for your company or products.',
+      icon: Globe,
+      path: '/capability-building/360-ai-tour'
     }
   ];
 
@@ -81,7 +96,7 @@ const CapabilityBuilding = () => {
           </p>
         </motion.div>
 
-        {/* Services Grid - 2x3 Layout */}
+        {/* Services Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div
@@ -101,7 +116,6 @@ const CapabilityBuilding = () => {
                 to={service.path}
                 className="block bg-white/90 backdrop-blur-lg rounded-2xl p-8 h-full border border-primary/10 hover:border-accent/30 hover:bg-white transition-all duration-300 shadow-lg"
               >
-                {/* هنا مجرد الأيقونة فقط بدون خلفية دائرية */}
                 <service.icon className="text-[#EA7946] mb-6" size={32} />
 
                 <h3 className="text-2xl font-bold text-primary mb-4 group-hover:text-accent transition-colors duration-300">

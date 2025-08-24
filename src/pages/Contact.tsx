@@ -144,9 +144,15 @@ const ContactForm = () => {
                 <option value="" disabled>
                   Select a service
                 </option>
-                <option>Capability Building</option>
-                <option>Consultation</option>
-                <option>Other</option>
+                <option>AI Content</option>
+                <option>Professional Media Production</option>
+                <option>Interactive Company Profile</option>
+                <option>AI Powered Training Content</option>
+                <option>AI Automation System</option>
+                <option>Company Portal</option>
+                <option>Social Media Management</option>
+                <option>Interactive Avatar</option>
+                <option>360 AI Tour</option>
               </select>
               <ChevronDown
                 className="absolute right-3 top-1/2 -translate-y-1/2 text-[#080844]"
