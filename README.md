@@ -21,10 +21,44 @@ We don’t just build products — we **craft experiences** that leave a mark.
 
 ## ⚡ Tech Stack
 We work with modern tools and frameworks:  
-- **Frontend:** React, TailwindCSS, Framer Motion  
+- **Frontend:** React, Vite, TailwindCSS, Framer Motion  
 - **Backend:** Node.js, Express, MongoDB  
 - **AI/ML:** Python, TensorFlow, OpenAI APIs  
 - **Design & Media:** Figma, Adobe Suite, Blender  
+
+---
+
+## 🚀 Run the Website Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/<your-org-or-username>/zuccess.git
+cd zuccess
+```
+
+### 2️⃣ Frontend Setup
+```bash
+cd frontend
+npm install
+npm run dev
+```
+- The frontend will run at 👉 http://localhost:5173  
+
+### 3️⃣ Backend Setup
+In another terminal:
+```bash
+cd backend
+npm install
+npm run dev
+```
+- The backend will run at 👉 http://localhost:3000  
+
+### 4️⃣ Build Frontend for Production
+```bash
+cd frontend
+npm run build
+npm run preview
+```
 
 ---
 
@@ -34,11 +68,6 @@ We work with modern tools and frameworks:
 - 📸 Instagram: [@zuccess.ai](https://www.instagram.com/zuccess.ai?igsh=NzVzOTA1bnhpN3Rz)  
 - 📘 Facebook: [Zuccess](https://www.facebook.com/share/19TJNiJ2LM/?mibextid=wwXIfr)  
 - ✉️ Email: **mohammad@zuccess.net**
-
----
-
-## 🏗️ Current Status
-We’re actively building our platform — stay tuned for updates, new projects, and behind-the-scenes content!  
 
 ---
 
