@@ -21,27 +21,12 @@ const AITour360 = () => {
           </p>
         </motion.div>
 
-        {/* Image / Video Gallery Placeholder */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-8"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.3 }}
-        >
-          <div className="h-64 bg-gray-800 rounded-xl flex items-center justify-center">
-            <span className="text-gray-400">Image or Video Placeholder 1</span>
-          </div>
-          <div className="h-64 bg-gray-800 rounded-xl flex items-center justify-center">
-            <span className="text-gray-400">Image or Video Placeholder 2</span>
-          </div>
-        </motion.div>
-
         {/* Description / Details */}
         <motion.div
           className="space-y-4 max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.5 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
         >
           <h2 className="text-3xl font-semibold">Interactive Tour Features</h2>
           <ul className="list-disc list-inside space-y-2 text-lg text-gray-200">
@@ -57,9 +42,14 @@ const AITour360 = () => {
           className="text-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.7, delay: 0.7 }}
+          transition={{ duration: 0.7, delay: 0.5 }}
         >
-          <button className="px-8 py-3 bg-[#EA7946] hover:bg-orange-600 rounded-xl font-semibold text-white transition-colors duration-300">
+          <button
+            className="px-8 py-3 bg-[#EA7946] hover:bg-orange-600 rounded-xl font-semibold text-white transition-colors duration-300"
+            onClick={() => {
+              window.location.href = "/360viewer/index.htm";
+            }}
+          >
             Start the Tour
           </button>
         </motion.div>

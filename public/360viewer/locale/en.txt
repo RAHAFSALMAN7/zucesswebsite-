@@ -1,0 +1,109 @@
+#: locale=en
+
+## Hotspot
+
+### Text
+HotspotPanoramaOverlayTextImage_DB66028F_C187_6DEC_41E1_3C43F1B73C09.text = الاسماك
+HotspotPanoramaOverlayTextImage_DA1A1BDB_C188_F375_41C3_C646C03C4809.text = الخضار
+HotspotPanoramaOverlayTextImage_DBF155EF_C1BF_D72D_41E5_380819B2B141.text = اللحوم
+HotspotPanoramaOverlayTextImage_D86994E0_C19F_5553_41D1_FA0CFAAF099F.text = المخبز
+
+### URL
+FramePanoramaOverlay_DA684C19_C198_D4F5_41C5_EF4221B140A1.url = https://shop.tamimimarkets.com/
+overlay_DD9294D3_C28B_F574_41E5_3085ADE72F01.url = //www.youtube.com/embed/6_VnMuSux7Q
+overlay_DDAF856E_C198_D72C_41D7_732BBDAA9E4D.url = //www.youtube.com/embed/kBU_AZ9tfXE
+
+## Media
+
+### Image
+imlevel_D6EBA988_DB96_AC3C_41E2_F4EF81A8DDD4.url = media/panorama_CB7AD8B3_C188_DD35_41BF_D6050B2FC33B_HS_1r5q5545_en.webp
+imlevel_D768490F_DB96_AC34_41C5_1FA592A938DA.url = media/panorama_CB7AD8B3_C188_DD35_41BF_D6050B2FC33B_HS_3q23ftq3_en.webp
+imlevel_D6150A0F_DB96_AC34_41B5_FD0858B8EDBC.url = media/panorama_CB7AD8B3_C188_DD35_41BF_D6050B2FC33B_HS_ij50zrjs_en.webp
+imlevel_D647280F_DB96_AC34_41C1_5CA63EEF9CEF.url = media/panorama_CB7AD8B3_C188_DD35_41BF_D6050B2FC33B_HS_j70rxrct_en.webp
+
+### Title
+video_DC3585F0_C27B_5733_41B7_F0A28C306F34.label = AQNs1zCh8EOKBgpi82J-sE6lW1Z86Bz3HoOyjaf_T-Ygh3UBcPwUe-r-AdfmOCTj1BcfHIKoHQb6g5KPKZwzzLKByXZw3UJOQbS9Xi4PtfnrBA
+video_D4182379_C2B9_5335_41E2_7887471FD4A7.label = Avatar IV Video - 2025-08-18T123440.832
+video_D0C1F748_C287_7353_41D6_3B70EF8E60D9.label = Avatar IV Video - 2025-08-20T143135.527
+video_DE7DFB84_C2B8_D3D3_41E4_DD77A58FD4C0.label = Avatar IV Video - 2025-08-20T150940.099
+video_DD4B3DDD_C2B9_B76C_41E2_DB548FD6919A.label = Avatar IV Video - 2025-08-20T150940.099
+video_DE3265B5_C288_D73C_41CC_23C925072863.label = Avatar IV Video - 2025-08-20T151523.530
+video_DE8FB819_C287_7CF5_41D7_62772DDEC67F.label = Avatar IV Video - 2025-08-20T154048.558
+album_C21DC860_DB9D_ACEC_41D7_F1F3ABF542FD.label = Photo Album images (8)
+video_DE6F7D5F_C299_576C_419C_2D6364C35233.label = SnapInsta.to_AQNmf7LdywUs0qTL9c9HvklJU5LJ1Wr3FwzmOskUv_Pl_uE9N19xSj4lWRuA6QGuWh-T4eIIKdqeEJtRdOS58UiXAAJAYZHnhUe8GKI
+album_C21DC860_DB9D_ACEC_41D7_F1F3ABF542FD_1.label = Wk_15_SA25_00001-scaled
+panorama_CB7CA1A7_C18B_EFDC_41E4_2C3A40CF64D6.label = image00001
+panorama_CB7D4460_C18B_F554_41C9_73290801FF0B.label = image00003
+panorama_CB7D5D7F_C18B_D72D_41E8_10883E5EF08F.label = image00004
+panorama_CB7D2C58_C18B_B574_41D5_0EDC229A8A57.label = image00005
+panorama_CB7D7875_C18B_DD3D_41A3_F452714C9FB8.label = image00006
+panorama_CB7DF3FE_C18B_532C_41DF_283CEBB85D59.label = image00007
+panorama_CB7DAFFB_C18B_5334_41DF_43CB5A330EA8.label = image00008
+panorama_CB7DC817_C18B_7CFD_41D7_9AD1902BE330.label = image00009
+panorama_CB7D735F_C188_B36C_41E3_8A88A847DAA6.label = image00012
+panorama_CB7D1B46_C188_F35F_41E7_51D558565AD9.label = image00013
+panorama_CB7D6751_C188_D374_41CD_08440900EF45.label = image00014
+panorama_CB7D3F3B_C188_D335_41E2_F0AB805F5F1A.label = image00015
+panorama_CB7D1342_C188_D354_41E1_4543AB324C8E.label = image00016
+panorama_CB7D0788_C188_B3D3_41D6_ACBF47C6693A.label = image00017
+panorama_CB7B3B7B_C189_5334_41E7_7D389AD11F05.label = image00018
+panorama_CB7B3F5F_C189_736C_41DE_84570EAF2D22.label = image00019
+panorama_CB7B537A_C189_7337_41C5_F92B6A9589BA.label = image00020
+panorama_CB7B77AE_C189_532C_41E2_691616719BA4.label = image00021
+panorama_CB7BD435_C189_D53C_41E0_0189B530DFE1.label = image00022
+panorama_CB7B4C09_C189_B4D5_41E6_6CC725782252.label = image00023
+panorama_CB7B1FFD_C189_D32D_41E6_7268F1D187E2.label = image00024
+panorama_CB7B2829_C189_FCD5_4195_978B6F7660E2.label = image00025
+panorama_CB7B1C1C_C189_D4EC_41E0_A159CD83E84E.label = image00026
+panorama_CB7BEF5B_C189_B375_41E5_371AE45C4BC0.label = image00027
+panorama_CB7B255F_C189_576D_41CF_2FD31A5FADE0.label = image00028
+panorama_CB7B488D_C189_7DED_41E7_C4B2788BD0D3.label = image00029
+panorama_CB7BC1E1_C189_AF55_41AA_4BB19153E4CF.label = image00030
+panorama_CB7B509A_C188_ADF7_41E1_CD8B8A7D167B.label = image00032
+panorama_CD4F1E23_C187_54D5_41D6_8F4BACACE053.label = image00037
+album_C21DC860_DB9D_ACEC_41D7_F1F3ABF542FD_0.label = images (8)
+panorama_CB7D2BFD_C18B_532D_41E1_67EADBB8DD53.label = الاسماك
+panorama_CB7CD937_C18B_BF3C_41DA_FC201FCB4B57.label = الخضار
+panorama_CB7DCF59_C188_B374_41DD_8E5D96A10E0C.label = اللحوم
+panorama_CB7B6CB1_C189_5534_4194_8D0A57A353A1.label = المخبز
+panorama_CB7B549F_C188_B5ED_41B7_5D7C350B6DB8.label = المدخل1
+panorama_CB7AD8B3_C188_DD35_41BF_D6050B2FC33B.label = المدخل2
+
+### Video
+videolevel_C2BCDD11_DBF2_E42C_41C4_94CA0E34FE0F.url = media/video_D0C1F748_C287_7353_41D6_3B70EF8E60D9_en.mp4
+videolevel_C2BCDD11_DBF2_E42C_41C4_94CA0E34FE0F.posterURL = media/video_D0C1F748_C287_7353_41D6_3B70EF8E60D9_poster_en.jpg
+videolevel_C2BF5C79_DBF2_E4DC_41C8_8FEB7E8A3377.url = media/video_D4182379_C2B9_5335_41E2_7887471FD4A7_en.mp4
+videolevel_C2BF5C79_DBF2_E4DC_41C8_8FEB7E8A3377.posterURL = media/video_D4182379_C2B9_5335_41E2_7887471FD4A7_poster_en.jpg
+videolevel_C2BA10DA_DBF2_FDDC_41A0_342DEDECE5D6.url = media/video_DC3585F0_C27B_5733_41B7_F0A28C306F34_en.mp4
+videolevel_C2BA10DA_DBF2_FDDC_41A0_342DEDECE5D6.posterURL = media/video_DC3585F0_C27B_5733_41B7_F0A28C306F34_poster_en.jpg
+videolevel_C2BDBE60_DBF2_E4ED_41D1_39AE5A3E6BDC.url = media/video_DD4B3DDD_C2B9_B76C_41E2_DB548FD6919A_en.mp4
+videolevel_C2BDBE60_DBF2_E4ED_41D1_39AE5A3E6BDC.posterURL = media/video_DD4B3DDD_C2B9_B76C_41E2_DB548FD6919A_poster_en.jpg
+videolevel_C2BD7FAA_DBF2_E47D_41EA_F0FFC9FD8B47.url = media/video_DE3265B5_C288_D73C_41CC_23C925072863_en.mp4
+videolevel_C2BD7FAA_DBF2_E47D_41EA_F0FFC9FD8B47.posterURL = media/video_DE3265B5_C288_D73C_41CC_23C925072863_poster_en.jpg
+videolevel_C2BC1DBA_DBF2_E45C_41BB_5F77B5EF85D9.url = media/video_DE6F7D5F_C299_576C_419C_2D6364C35233_en.mp4
+videolevel_C2BC1DBA_DBF2_E45C_41BB_5F77B5EF85D9.posterURL = media/video_DE6F7D5F_C299_576C_419C_2D6364C35233_poster_en.jpg
+videolevel_C2BD2F09_DBF2_E43C_4182_F72CE4C448BA.url = media/video_DE7DFB84_C2B8_D3D3_41E4_DD77A58FD4C0_en.mp4
+videolevel_C2BD2F09_DBF2_E43C_4182_F72CE4C448BA.posterURL = media/video_DE7DFB84_C2B8_D3D3_41E4_DD77A58FD4C0_poster_en.jpg
+videolevel_C2BA9044_DBF2_FC34_41B2_5FDB78DCCF8B.url = media/video_DE8FB819_C287_7CF5_41D7_62772DDEC67F_en.mp4
+videolevel_C2BA9044_DBF2_FC34_41B2_5FDB78DCCF8B.posterURL = media/video_DE8FB819_C287_7CF5_41D7_62772DDEC67F_poster_en.jpg
+
+### Video Subtitles
+
+## Popup
+
+### Body
+htmlText_C2C24FFE_DB96_63D4_41CF_E140E5FF920A.html = <div style="text-align:left; color:#000; "><HTML><BODY><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;"> </SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;">تعد أسواق التميمي واحدة من أبرز وأهم سلاسل الأسواق المتطورة في المملكة العربية السعودية والبحرين. تتميز فروعها بالمساحات الواسعة والتنظيم الجيد والأسعار التنافسية. تسعى الشركة باستمرار لتوسيع فروعها في جميع مناطق المملكتين وتحسين جودة الخدمات المقدمة من خلال بناء أسواق جديدة وتجديد الفروع القديمة وتطوير آليات العمل. منذ تأسيسها في عام 1979، تلتزم أسواق التميمي بتطوير رؤيتها.</SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;">تشتهر السلسلة بتوفير المنتجات العضوية والطبيعية، والمنتجات الخالية من الغلوتين، والخيارات الصديقة للبيئة، بالإضافة إلى مجموعة متنوعة من العلامات التجارية المستوردة والمحلية. يتم تزويد هذه المنتجات بانتظام لتلبية أذواق قاعدة عملائها المتنامية من مختلف الفئات العمرية.</SPAN></DIV><DIV STYLE="text-align:justify;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-line;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;">في عام 2013، تم اختيار أسواق التميمي كواحدة من أفضل 100 علامة تجارية سعودية وفقًا لمسح أجرته شركة إبسوس العالمية لأبحاث السوق. وتعتبر شريك ترويجي في برنامج "صنع في السعودية 2022"، وتم تصنيف أسواق التميمي كأكثر سلاسل الأسواق نموًا وتطورًا في المملكة العربية السعودية في عام 2022 من قبل مجلة جلوبال براند البريطانية. بالإضافة إلى ذلك، حصلت على شهادة "أفضل بيئة عمل" من منظمة جريت بليس تو وورك، والتي تكرم بيئات العمل التي تلتزم بأعلى معايير الجودة العملية والممارسات الأخلاقية.</SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;">في عام 2019، أطلقت أسواق التميمي خدمة التسوق عبر الإنترنت لعملائها بنظام الاستلام من المتجر في أول فروعها بمدينة الخبر، وحققت هذه الخدمة نجاحًا كبيرًا، مما أدى إلى توسيعها لتشمل 35 فرعًا بنظام الاستلام من المتجر. الخطة هي الوصول إلى 45 فرعًا بنظام الاستلام من المتجر بحلول نهاية عام 2024في أواخر عام 2024، عززت أسواق التميمي خدماتها عبر الإنترنت بإطلاق خدمة التوصيل للمنازل، التي تغطي كل من مدينة الخبر، الدمام، الرياض، بريدة، جدة، والمدينة المنورة.</SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;">أسواق التميمي شركةٌ سعودية يقع مقرها بمدينة الخُبر و هي إحدى الشركات التابعة لمجموعة التميمي جلوبال مقرها الرئيسي بمدينة الدمام في المملكة العربية السعودية، سجل تجاري رقم (2050079303). أسواق التميمي تدير حالياً عدة فروع منها بالأحساء، الخُبر، الدمام، الظهران، جدّة، الجُبيل، و الرياض, كما وأنها بصدد التخطيط لإنشاء أسواق جديدة للوصول إلى 50 فرعاً مع حلول عام 2020 وذلك ضمن خططها التوسيعية في المملكة.</SPAN></DIV></BODY></HTML></div>
+
+## Skin
+
+### Dropdown
+DropDown_CD788E7B_DBAD_E4DC_41E1_1F731FD01587.prompt = اخر العروض 
+DropDown_CDF06EC2_DBAE_E42C_418A_0287C8B1B29C.prompt = الاقسام
+DropDown_C394B7CC_DBAE_6434_41E7_2FA46BB27219.label = من نحن
+
+## Tour
+
+### Description
+
+### Title
+tour.name = Untitled 3

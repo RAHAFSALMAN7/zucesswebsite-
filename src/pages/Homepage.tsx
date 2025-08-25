@@ -115,9 +115,13 @@ const Homepage = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1 }}
           >
-            <button className="bg-[#EBEBDF] border-2 border-[#080844] text-[#080844] px-6 py-3 rounded-lg font-semibold hover:bg-[#080844] hover:text-[#EBEBDF] transition">
-              Our Services
-            </button>
+            <Link
+  to="/capability-building"
+  className="bg-[#EBEBDF] border-2 border-[#080844] text-[#080844] px-6 py-3 rounded-lg font-semibold hover:bg-[#080844] hover:text-[#EBEBDF] transition"
+>
+  Our Services
+</Link>
+
           </motion.div>
         </div>
       </section>
