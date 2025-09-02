@@ -61,19 +61,20 @@ const Homepage = () => {
       {/* Section 1 - Hero */}
       <section className="relative w-full h-[90vh] flex flex-col justify-center items-start text-left px-6 md:px-24 overflow-hidden">
         {/* Background Video */}
-      <video
-  ref={heroVideoRef}
-  autoPlay
-  muted
-  loop
-  playsInline
-  className="absolute inset-0 w-full h-full object-cover top-10"
-  id="heroVideo"
->
-  <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4" />
-  Your browser does not support the video tag.
-</video>
-         {/* Dark Overlay */}
+        <video
+          ref={heroVideoRef}
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover top-10"
+          id="heroVideo"
+        >
+          <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
         {/* زر ميوت/انميوت بأسفل يمين */}
@@ -114,12 +115,11 @@ const Homepage = () => {
             transition={{ duration: 1, delay: 1 }}
           >
             <Link
-  to="/capability-building"
-  className="bg-[#EBEBDF] border-2 border-[#080844] text-[#080844] px-6 py-3 rounded-lg font-semibold hover:bg-[#080844] hover:text-[#EBEBDF] transition"
->
-  Our Services
-</Link>
-
+              to="/capability-building"
+              className="bg-[#EBEBDF] border-2 border-[#080844] text-[#080844] px-6 py-3 rounded-lg font-semibold hover:bg-[#080844] hover:text-[#EBEBDF] transition"
+            >
+              Our Services
+            </Link>
           </motion.div>
         </div>
       </section>
@@ -146,9 +146,10 @@ const Homepage = () => {
             className="w-full h-full object-cover"
           >
             <source
-              src=" https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4 npm"
-              type="video/mp4"
-            />
+  src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4"
+  type="video/mp4"
+/>
+
             Your browser does not support the video tag.
           </video>
 
@@ -258,85 +259,6 @@ const Homepage = () => {
             );
           })}
         </motion.div>
-      </section>
-
-      {/* Section 4 - Ready to Transform */}
-      <section className="py-10 bg-[#EBEBDF]">
-        <div className="max-w-5xl mx-auto px-4">
-          <div className="flex flex-col lg:flex-row gap-6">
-            {/* Left Block */}
-            <motion.div
-              className="flex-1 relative rounded-none overflow-hidden"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <img
-                src="WhatsApp Image 2025-08-19 at 12.53.17 PM.png"
-                alt="Left Visual"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-8 text-white text-center">
-                <p className="text-xl leading-relaxed mb-6">
-                  <strong className="font-extrabold block mb-2">
-                    Ready to Transform Your Business?
-                  </strong>
-                  Join the future of intelligent solutions and unlock your organization's full potential.
-                </p>
-                {/* رابط بدل زر */}
-                <Link
-                  to="/capability-building"
-                  className="bg-[#EA7946] text-[#080844] font-extrabold px-6 py-3 rounded-none shadow-md hover:opacity-90 transition-all duration-200"
-                >
-                  Let's Empower Your Brand
-                </Link>
-              </div>
-            </motion.div>
-
-            {/* Right Block */}
-            <motion.div
-              className="flex-1 relative rounded-none overflow-hidden"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <img
-                src="WhatsApp Image 2025-08-19 at 12.27.53 PM.png"
-                alt="Right Visual"
-                className="w-full h-auto object-cover"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end items-center p-8 text-[#080844] text-center">
-  <div className="mb-12 flex flex-col items-center gap-4">
-    <p className="text-white max-w-xs mx-auto">
-      Step into a new era of smart strategies that drive measurable results for your business.
-    </p>
-    <Link
-      to="/capability-building"
-      className="bg-[#F9F5EC] font-extrabold px-6 py-3 rounded-none shadow-md hover:opacity-90 transition-all duration-200"
-    >
-      Let’s Build Together
-    </Link>
-  </div>
-</div>
-
-            </motion.div>
-          </div>
-
-          {/* Bottom Bar */}
-          <motion.div
-            className="bg-[#080844] px-6 py-4 flex justify-center lg:justify-end rounded-none mt-6"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
-            <Link
-              to="/capability-building"
-              className="bg-[#EA7946] text-[#080844] font-extrabold px-6 py-3 rounded-none shadow-md hover:opacity-90 transition-all duration-200"
-            >
-              Get Started Today
-            </Link>
-          </motion.div>
-        </div>
       </section>
     </div>
   );
