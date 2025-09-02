@@ -70,12 +70,10 @@ const Homepage = () => {
   className="absolute inset-0 w-full h-full object-cover top-10"
   id="heroVideo"
 >
-  <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4" />
+  <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4" />
   Your browser does not support the video tag.
 </video>
-
-
-        {/* Dark Overlay */}
+         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
 
         {/* زر ميوت/انميوت بأسفل يمين */}
@@ -148,7 +146,7 @@ const Homepage = () => {
             className="w-full h-full object-cover"
           >
             <source
-              src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4"
+              src=" https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4 npm"
               type="video/mp4"
             />
             Your browser does not support the video tag.
@@ -308,18 +306,19 @@ const Homepage = () => {
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-end items-center p-8 text-[#080844] text-center">
-                <div className="mb-12">
-                  <Link
-                    to="/capability-building"
-                    className="bg-[#F9F5EC] font-extrabold px-6 py-3 rounded-none shadow-md hover:opacity-90 transition-all duration-200 mb-6"
-                  >
-                    Let’s Build Together
-                  </Link>
-                  <p className="text-white max-w-xs mx-auto">
-                    Step into a new era of smart strategies that drive measurable results for your business.
-                  </p>
-                </div>
-              </div>
+  <div className="mb-12 flex flex-col items-center gap-4">
+    <p className="text-white max-w-xs mx-auto">
+      Step into a new era of smart strategies that drive measurable results for your business.
+    </p>
+    <Link
+      to="/capability-building"
+      className="bg-[#F9F5EC] font-extrabold px-6 py-3 rounded-none shadow-md hover:opacity-90 transition-all duration-200"
+    >
+      Let’s Build Together
+    </Link>
+  </div>
+</div>
+
             </motion.div>
           </div>
 
