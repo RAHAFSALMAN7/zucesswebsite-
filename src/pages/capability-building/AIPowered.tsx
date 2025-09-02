@@ -6,32 +6,31 @@ import {
   Users, 
   ArrowRight, 
   Play,
-  ArrowLeft
+  ArrowLeft,
+  ChevronLeft,
+  ChevronRight
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const showcaseVideos = [
-
   {
     title: "With this level of video and avatar quality, you’ll have content we’re truly proud to deliver.",
     videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4",
     thumbnail: "https://i.postimg.cc/Xv7dRsFx/aiwelcom-to-zuccess.png"
   }, 
-
   {
     title: "Why choose Zuccess?",
     videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755501115/why_zuccess_ig3mr0.mp4",
     thumbnail: "https://i.postimg.cc/yd2RSBGr/whychoos-zuccess.png"
   },
   {
-    title: "evreyone posts ",
+    title: "LinkedIn is Our Growth Engine: Elevate our brand, engage with industry leaders, and turn connections into opportunities. LinkedIn helps our company shine where it matters most. ",
     videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1755501406/LINKEDIN_w8zwl9.mp4",
     thumbnail: "https://i.postimg.cc/MTfMwNG0/startposting.png"
   },
-   
   {
-    title: "Welcome to Zuccess?",
-    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4",
+    title: "Smart business solutions, AI content & media production, interactive company profiles, AI-powered training & automation, company portals, social media management, interactive avatars, and 360° virtual tours.",
+    videoUrl: "https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4",
     thumbnail: "https://i.postimg.cc/FdxXLybz/image.png"
   }
 ];
@@ -62,25 +61,22 @@ const features = [
 function App() {
   const [activeDemo, setActiveDemo] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    if (isPlaying) {
-      // لما الفيديو شغال ما نغير الفيديو
-      return;
-    }
-    // إذا الفيديو مو شغال نغير الفيديو كل 4 ثواني
+    if (isPlaying) return;
     const interval = setInterval(() => {
       setActiveDemo((prev) => (prev + 1) % showcaseVideos.length);
     }, 4000);
-
     return () => clearInterval(interval);
   }, [isPlaying]);
 
-  // تابع تحديث حالة تشغيل الفيديو
   const handlePlay = () => setIsPlaying(true);
   const handlePause = () => setIsPlaying(false);
   const handleEnded = () => setIsPlaying(false);
+
+  const prevVideo = () => setActiveDemo((prev) => (prev - 1 + showcaseVideos.length) % showcaseVideos.length);
+  const nextVideo = () => setActiveDemo((prev) => (prev + 1) % showcaseVideos.length);
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#EBEBDF' }}>
@@ -97,12 +93,9 @@ function App() {
           </Link>
         </div>
 
-        {/* Header Section - بدون الخطين */}
+        {/* Header Section */}
         <div className="mb-16">
-          <h2 
-            className="text-4xl lg:text-5xl font-bold text-left mb-6"
-            style={{ color: '#080844' }}
-          >
+          <h2 className="text-4xl lg:text-5xl font-bold text-left mb-6" style={{ color: '#080844' }}>
             AI Content
           </h2>
           <div className="prose prose-lg max-w-none text-left" style={{ color: '#080844' }}>
@@ -118,15 +111,10 @@ function App() {
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
-          {/* Left Column - Key Features & Buttons */}
+          {/* Left Column - Features & Buttons */}
           <div className="space-y-8">
-
-            {/* Key Features */}
             <div>
-              <h3 
-                className="text-2xl font-bold mb-6"
-                style={{ color: '#080844' }}
-              >
+              <h3 className="text-2xl font-bold mb-6" style={{ color: '#080844' }}>
                 Key Features & Content Solutions
               </h3>
               <div className="space-y-4">
@@ -135,23 +123,14 @@ function App() {
                     key={index}
                     className="flex items-start space-x-4 p-4 rounded-xl bg-white/50 backdrop-blur-sm hover:bg-white/70 transition-all duration-300 hover:shadow-lg hover:scale-[1.02]"
                   >
-                    <div 
-                      className="flex-shrink-0 p-2 rounded-lg"
-                      style={{ backgroundColor: '#EA7946', color: 'white' }}
-                    >
+                    <div className="flex-shrink-0 p-2 rounded-lg" style={{ backgroundColor: '#EA7946', color: 'white' }}>
                       {feature.icon}
                     </div>
                     <div>
-                      <h4 
-                        className="font-semibold text-lg mb-1"
-                        style={{ color: '#080844' }}
-                      >
+                      <h4 className="font-semibold text-lg mb-1" style={{ color: '#080844' }}>
                         {feature.title}
                       </h4>
-                      <p 
-                        className="text-sm opacity-80"
-                        style={{ color: '#080844' }}
-                      >
+                      <p className="text-sm opacity-80" style={{ color: '#080844' }}>
                         {feature.description}
                       </p>
                     </div>
@@ -171,11 +150,7 @@ function App() {
               </button>
               <button 
                 className="group flex items-center justify-center px-8 py-4 rounded-xl font-semibold text-lg border-2 transition-all duration-300 hover:scale-105 hover:shadow-xl transform"
-                style={{ 
-                  backgroundColor: '#080844', 
-                  color: '#EBEBDF',
-                  borderColor: '#080844'
-                }}
+                style={{ backgroundColor: '#080844', color: '#EBEBDF', borderColor: '#080844' }}
               >
                 <Play className="mr-2 w-5 h-5 group-hover:scale-110 transition-transform" />
                 Request Demo
@@ -186,19 +161,33 @@ function App() {
           {/* Right Column - Demo Carousel */}
           <div className="relative">
             <div className="mb-6">
-              <h3 
-                className="text-2xl font-bold text-center mb-2"
-                style={{ color: '#080844' }}
-              >
+              <h3 className="text-2xl font-bold text-center mb-2" style={{ color: '#080844' }}>
                 AI Solutions in Action
               </h3>
               <div className="h-1 w-20 mx-auto" style={{ backgroundColor: '#EA7946' }}></div>
             </div>
 
             {/* Carousel Container */}
-            <div className="relative bg-white rounded-2xl shadow-2xl p-8 min-h-[400px] overflow-hidden">
+            <div className="relative bg-white rounded-2xl shadow-2xl p-8 min-h-[500px] overflow-visible">
+
+              {/* Left Arrow */}
+              <button 
+                onClick={prevVideo} 
+                className="absolute top-1/2 -left-6 transform -translate-y-1/2 bg-[#080844]/70 hover:bg-[#080844] text-white p-3 rounded-full z-20 transition"
+              >
+                <ChevronLeft className="w-6 h-6"/>
+              </button>
+
+              {/* Right Arrow */}
+              <button 
+                onClick={nextVideo} 
+                className="absolute top-1/2 -right-6 transform -translate-y-1/2 bg-[#080844]/70 hover:bg-[#080844] text-white p-3 rounded-full z-20 transition"
+              >
+                <ChevronRight className="w-6 h-6"/>
+              </button>
+
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-orange-50/50"></div>
-              
+
               {/* Video Player */}
               <div className="aspect-video rounded-xl overflow-hidden mb-4 relative z-10">
                 <video
@@ -227,13 +216,12 @@ function App() {
                   <button
                     key={index}
                     onClick={() => setActiveDemo(index)}
-                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                      index === activeDemo ? 'bg-[#EA7946]' : 'bg-[#080844]/50 hover:bg-[#080844]'
-                    }`}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${index === activeDemo ? 'bg-[#EA7946]' : 'bg-[#080844]/50 hover:bg-[#080844]'}`}
                     aria-label={`Go to video ${index + 1}`}
                   />
                 ))}
               </div>
+
             </div>
           </div>
         </div>

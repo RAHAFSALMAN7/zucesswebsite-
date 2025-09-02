@@ -10,7 +10,6 @@ const Homepage = () => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    // Observer for "Explore Our Solution" section
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -25,7 +24,6 @@ const Homepage = () => {
   }, []);
 
   useEffect(() => {
-    // Ensure hero video plays correctly
     const video = heroVideoRef.current;
     if (video) {
       video.oncanplay = () => {
@@ -35,9 +33,7 @@ const Homepage = () => {
   }, []);
 
   useEffect(() => {
-    // Observer to pause/play videos based on scroll visibility
     const videos = [heroVideoRef.current, introVideoRef.current].filter(Boolean) as HTMLVideoElement[];
-
     const handlePlayPause = (entries: IntersectionObserverEntry[]) => {
       entries.forEach(entry => {
         const video = entry.target as HTMLVideoElement;
@@ -48,19 +44,15 @@ const Homepage = () => {
         }
       });
     };
-
     const observer = new IntersectionObserver(handlePlayPause, { threshold: 0.5 });
-
     videos.forEach(video => observer.observe(video));
-
     return () => observer.disconnect();
   }, []);
 
   return (
     <div className="w-full">
-      {/* Section 1 - Hero */}
+      {/* Hero Section */}
       <section className="relative w-full h-[90vh] flex flex-col justify-center items-start text-left px-6 md:px-24 overflow-hidden">
-        {/* Background Video */}
         <video
           ref={heroVideoRef}
           autoPlay
@@ -68,16 +60,10 @@ const Homepage = () => {
           loop
           playsInline
           className="absolute inset-0 w-full h-full object-cover top-10"
-          id="heroVideo"
         >
           <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030979/automation_2_ou39q4.mp4" />
-          Your browser does not support the video tag.
         </video>
-
-        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/70"></div>
-
-        {/* زر ميوت/انميوت بأسفل يمين */}
         <button
           className="absolute bottom-6 right-6 z-20 bg-white/80 text-black rounded-full w-12 h-12 flex items-center justify-center text-xl shadow-lg hover:bg-black hover:text-white transition"
           onClick={() => {
@@ -87,8 +73,6 @@ const Homepage = () => {
         >
           🔊
         </button>
-
-        {/* Content */}
         <div className="relative z-10 py-36 flex flex-col gap-6">
           <motion.h1
             className="text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-3xl text-[#EBEBDF]"
@@ -98,7 +82,6 @@ const Homepage = () => {
           >
             We Turn Smart Ideas into Smarter Systems
           </motion.h1>
-
           <motion.p
             className="text-lg md:text-xl max-w-xl mb-10 text-[#EBEBDF]"
             initial={{ opacity: 0, y: 20 }}
@@ -107,7 +90,6 @@ const Homepage = () => {
           >
             ZUCCESS makes your vision faster, automated, and scalable.
           </motion.p>
-
           <motion.div
             className="flex flex-col sm:flex-row gap-4 items-start"
             initial={{ opacity: 0, y: 20 }}
@@ -124,18 +106,12 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Section 2 - Intro Video (About Company) */}
-      <section
-        className="flex flex-col items-center justify-center px-6 md:px-24 py-20"
-        style={{ backgroundColor: "#EBEBDF", color: "#080844" }}
-      >
-        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-          Get to Know Us
-        </h2>
+      {/* Intro Video Section */}
+      <section className="flex flex-col items-center justify-center px-6 md:px-24 py-20 bg-[#EBEBDF] text-[#080844]">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">Get to Know Us</h2>
         <p className="max-w-2xl text-center mb-10 text-lg text-gray-700">
           Discover who we are, our mission, and how we bring smart ideas into smarter systems.
         </p>
-
         <div className="relative w-full max-w-4xl aspect-video rounded-2xl overflow-hidden shadow-lg border-4 border-[#080844]">
           <video
             ref={introVideoRef}
@@ -145,15 +121,8 @@ const Homepage = () => {
             playsInline
             className="w-full h-full object-cover"
           >
-            <source
-  src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4"
-  type="video/mp4"
-/>
-
-            Your browser does not support the video tag.
+            <source src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4" type="video/mp4" />
           </video>
-
-          {/* زر كتم الصوت */}
           <button
             onClick={() => {
               const video = introVideoRef.current;
@@ -163,19 +132,13 @@ const Homepage = () => {
           >
             Toggle Sound
           </button>
-
-          {/* زر ملء الشاشة */}
           <button
             onClick={() => {
               const video = introVideoRef.current;
               if (video) {
-                if (video.requestFullscreen) {
-                  video.requestFullscreen();
-                } else if ((video as any).webkitRequestFullscreen) {
-                  (video as any).webkitRequestFullscreen();
-                } else if ((video as any).msRequestFullscreen) {
-                  (video as any).msRequestFullscreen();
-                }
+                if (video.requestFullscreen) video.requestFullscreen();
+                else if ((video as any).webkitRequestFullscreen) (video as any).webkitRequestFullscreen();
+                else if ((video as any).msRequestFullscreen) (video as any).msRequestFullscreen();
               }
             }}
             className="absolute bottom-4 left-4 bg-[#EA7946] text-white px-3 py-2 rounded-lg shadow-md text-sm"
@@ -185,8 +148,8 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Section 3 - Explore Our Solution */}
-      <section ref={exploreRef} style={{ backgroundColor: '#EBEBDF', paddingTop: 0 }}>
+      {/* Explore Our Solution Section */}
+      <section ref={exploreRef} style={{ backgroundColor: '#EBEBDF', paddingBottom: '6rem' }}>
         <div
           style={{
             backgroundColor: '#080844',
@@ -212,28 +175,26 @@ const Homepage = () => {
           style={{ maxWidth: '1200px', margin: '0 auto', marginTop: '-140px', padding: '0 1.5rem' }}
           initial="hidden"
           animate={isInView ? 'visible' : 'hidden'}
-          variants={{
-            visible: { transition: { staggerChildren: 0.3 } },
-            hidden: {},
-          }}
+          variants={{ visible: { transition: { staggerChildren: 0.3 } }, hidden: {} }}
         >
-          {[{
-              title: 'AI-Powered Business Solutions',
-              description: "AI-powered solutions to enhance your team's skills and performance",
+          {[
+            {
+              title: 'Social Media Management',
+              description: 'Let us build your voice while you build your business. Complete social media management from content creation to community engagement.',
               icon: Brain,
-              path: '/capability-building',
+              path: '/capability-building/social-media-management',
             },
             {
-              title: 'About Us',
-              description: 'Learn more about our mission and vision for the future',
+              title: 'Interactive Avatar',
+              description: 'Design customizable AI avatars to enhance virtual interactions and presentations.',
               icon: Users,
-              path: '/about-us',
+              path: '/interactive-avatar',
             },
             {
-              title: 'Contact Us',
-              description: 'Ready to transform your business? Get in touch with our team today',
+              title: '360 AI Tour',
+              description: 'Provide immersive 360° AI-powered virtual tours for your company or products.',
               icon: Mail,
-              path: '/contact',
+              path: '/360-ai-tour',
             },
           ].map((card, index) => {
             const Icon = card.icon;

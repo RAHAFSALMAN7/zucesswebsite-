@@ -57,27 +57,13 @@ const Header: React.FC = () => {
                 About Us
               </Link>
 
-              {/* دمج Contact مع Let’s Talk */}
+              {/* Contact Us مثل باقي الكبسات */}
               <Link
                 to="/contact"
-                className="border px-4 py-2 rounded transition-all duration-300 text-sm"
-                style={{
-                  wordSpacing: '0.15em',
-                  fontSize: '18px',
-                  color: '#EBEBDF',
-                  borderColor: '#EBEBDF',
-                  backgroundColor: 'transparent',
-                }}
-                onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor = '#EBEBDF';
-                  (e.currentTarget as HTMLAnchorElement).style.color = '#080844';
-                }}
-                onMouseLeave={(e) => {
-                  (e.currentTarget as HTMLAnchorElement).style.backgroundColor = 'transparent';
-                  (e.currentTarget as HTMLAnchorElement).style.color = '#EBEBDF';
-                }}
+                style={{ wordSpacing: '0.15em', fontSize: '18px' }}
+                className={`hover:text-[#EA7946] ${location.pathname === '/contact' ? 'text-[#EA7946]' : ''}`}
               >
-                Contact Us   
+                Contact Us
               </Link>
             </nav>
           </div>
