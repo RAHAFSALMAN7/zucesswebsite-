@@ -60,12 +60,17 @@ const InteractiveAvatar = () => {
           </motion.div>
         </section>
 
-        {/* Coming Soon Section */}
+        {/* Video Section (replace Coming Soon) */}
         <section className="flex justify-center items-center">
-          <div className="w-full max-w-4xl aspect-video rounded-3xl flex items-center justify-center bg-white/10 backdrop-blur-lg border-4 border-[#EBEBDF] shadow-2xl">
-            <h2 className="text-4xl md:text-5xl font-bold text-[#EA7946]">
-              Coming Soon
-            </h2>
+          <div className="w-full max-w-4xl aspect-video rounded-3xl flex items-center justify-center bg-white/10 backdrop-blur-lg border-4 border-[#EBEBDF] shadow-2xl overflow-hidden">
+            <video
+              src="https://res.cloudinary.com/diroi6tnk/video/upload/v1756030395/all_sound_effectsnewest_1_lvk07t.mp4"
+              controls
+              autoPlay
+              loop
+              muted
+              className="w-full h-full object-cover rounded-3xl"
+            />
           </div>
         </section>
 
